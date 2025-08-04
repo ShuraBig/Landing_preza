@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+p {
+  font-size: 18px;
+  font-weight: medium;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  width: 320px;
+}
+
+.date {
+  font-size: 28px;
+  color: #ffffff;
+  text-align: center;
+  width: 320px;
+}
+
+.line {
+  width: 320px;
+  height: 5px;
+  background-color: #ffffff;
+}
+
+body {
+  margin: auto;
+  width: 100%;
+}
+
+header {
+  background: linear-gradient(to bottom, #2bc0e4, #c1ecf7, #ffffff);
+}
+
+.head {
+  background-image: url(./images/head.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1400px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #122836;
+}
+
+menu {
+  max-width: 1160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.text_header {
+  margin-left: 49%;
+  margin-top: 219px;
+  padding-bottom: 293px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.green_line {
+  width: 160px;
+  height: 3px;
+  background-color: #00ab6c;
+  margin: 11px 0;
+}
+
+.about {
+  padding: 0 10px;
+  max-width: 1190px;
+  margin: auto;
+}
+
+.about p {
+    max-width: 1034px;
+}
+
+.about img {
+  padding: 20px 0;
+}
+
+#media {
+    max-width: 1190px;
+  padding: 60px 10px;
+  margin: auto;
+   
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#media p {
+    max-width: 558px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+@media (max-width: 1180px) {
+    .cards {
+        display: contents;
+    }
+    .card {
+        padding: 40px 40px 0 0;
+    }
+}
+
+
+.bg_earth {
+background-image: url(./images/Earth_.svg);
+ background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: auto;
+}
