@@ -185,6 +185,7 @@ h3 {
   width: 600px;
   font-size: 50px;
   font-weight: 700;
+  line-height: 1, 5;
   background: linear-gradient(90deg, #1fa2ff, #12d8fa, #00ab6c);
   -webkit-background-clip: text;
   background-clip: text;
@@ -258,7 +259,7 @@ h3 {
   max-width: 555px;
   height: 50px;
   justify-content: space-between;
-  background: linear-gradient(-90deg, #C2E59C, #64B3F4);
+  background: linear-gradient(-90deg, #c2e59c, #64b3f4);
   padding: 4px 16px;
   margin-left: 66px;
 }
@@ -301,11 +302,108 @@ h3 {
 }
 
 .sub_two_column p {
-font-size: 18px;
-width: 315px;
+  font-size: 18px;
+  width: 315px;
 }
 
 .footnote {
   font-size: 14px;
   margin: 20px 0 0 70px;
+}
+
+.advantage {
+  display: flex;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.note {
+  margin-top: 5px;
+}
+
+.advatage_1 {
+  display: grid;
+  grid-template-rows: 203px 430px 1fr;
+  grid-template-columns: 500px;
+}
+
+.advatage_1 > *:nth-child(1) {
+  justify-self: start;
+}
+
+.advatage_1 > *:nth-child(2) {
+  justify-self: end;
+}
+.advatage_1 > *:nth-child(3) {
+  justify-self: end;
+  text-align: end;
+}
+
+.advatage_2 {
+  margin-top: 290px;
+}
+
+.advatage_3 {
+  display: grid;
+  grid-template-rows: 345px 180px 380px 120px;
+  grid-template-columns: 450px;
+}
+
+.advatage_3 > *:nth-child(1) {
+  justify-self: center;
+}
+
+.contact div {
+  max-width: 560px;
+  justify-self: end;
+}
+
+.mail {
+  font-size: 22px;
+  font-weight: 500;
+  color: #1383c6;
+}
+
+address {
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.bold {
+  margin: 20px 0;
+  padding: 0;
+  font-weight: 800;
+}
+
+.long_black_line {
+  max-width: 1190px;
+  height: 1px;
+  background-color: #282828;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.menu_footer {
+  display: flex;
+  gap: 40px;
+}
+
+.copy {
+  font-size: 14px;
+  color: #282828;
+  justify-self: end;
+  margin: 10px;
+}
+
+footer {
+  max-width: 1190px;
+  margin: auto;
+}
+
+.bg_earth_down {
+  background: url(./images/Earth_down.svg) no-repeat,
+    linear-gradient(to bottom, transparent 40%, #ffffff, #c1ecf7, #2bc0e4);
+  background-position: 0 70%, 0 100%;
+  background-size: 100% 50%, cover;
+  background-repeat: no-repeat;
 }
