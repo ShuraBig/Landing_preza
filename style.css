@@ -91,7 +91,6 @@ menu {
 
 .about p {
   max-width: 1034px;
-  
 }
 
 .about img {
@@ -108,6 +107,11 @@ h2 {
   font-size: 40px;
   font-weight: 700;
   padding-left: 30px;
+  margin-bottom: 40px;
+}
+
+#media h2 {
+  margin: 0;
 }
 
 #media p {
@@ -140,29 +144,168 @@ h2 {
 }
 
 .advertising {
-    background-color: #F3F3F3;
-    padding: 29px;
+  background-color: #f3f3f3;
+  padding: 29px;
 }
 
 .long_line_green {
-max-width: 1130px;
-background-color: #00ab6c;
-height: 2px;
-margin-top: 40px;
-margin-left: 29px;
+  max-width: 1130px;
+  background-color: #00ab6c;
+  height: 2px;
+  /* margin-top: 40px; */
+  margin-left: 29px;
 }
 
 .ad_mir24 {
-    display: flex;
-    max-width: 232px;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+  display: flex;
+  max-width: 232px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 h3 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-left: 70px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
+.number {
+  width: 220px;
+  font-size: 50px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #1fa2ff, #12d8fa, #00ab6c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin: 0;
+}
+
+.number_time {
+  width: 600px;
+  font-size: 50px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #1fa2ff, #12d8fa, #00ab6c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.table {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 70px;
+  flex-wrap: wrap;
+}
+
+.one_column div {
+  margin-top: 40px;
+}
+
+.two_column {
+  justify-items: end;
+  margin-top: 80px;
+}
+
+.two_column img {
+  margin-left: 75px;
+}
+
+.statistic {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-left: 70px;
+}
+
+.statistic div {
+  justify-items: center;
+  margin-top: 75px;
+}
+
+.ad_socmedia {
+  display: flex;
+  max-width: 250px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.long_line_green_in {
+  max-width: 1130px;
+  background-color: #00ab6c;
+  height: 2px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.table_sub {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.table_sub h3 {
+  margin-left: 70px;
+  margin-bottom: 34px;
+}
+
+.strok_gradient {
+  display: flex;
+  align-items: center;
+  max-width: 555px;
+  height: 50px;
+  justify-content: space-between;
+  background: linear-gradient(-90deg, #C2E59C, #64B3F4);
+  padding: 4px 16px;
+  margin-left: 66px;
+}
+
+.strok {
+  display: flex;
+  align-items: center;
+  max-width: 555px;
+  height: 50px;
+  justify-content: space-between;
+  padding: 4px 16px;
+  margin-left: 66px;
+}
+
+.name_socmrdia {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 260px;
+}
+
+.vert_line {
+  height: 50px;
+  width: 1px;
+  background-color: #ffffff;
+}
+
+.table_sub p {
+  font-size: 24px;
+}
+
+.sub_number {
+  width: 189px;
+  text-align: right;
+}
+
+.sub_two_column {
+  margin-left: 70px;
+  margin-top: 40px;
+}
+
+.sub_two_column p {
+font-size: 18px;
+width: 315px;
+}
+
+.footnote {
+  font-size: 14px;
+  margin: 20px 0 0 70px;
+}
