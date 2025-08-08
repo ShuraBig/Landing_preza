@@ -54,6 +54,136 @@ a {
   color: #122836;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 2%;
+}
+
+.hamburger__icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger__icons span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #34618e;
+  border-radius: 2px;
+}
+
+.hamburger__menu {
+  top: 0;
+  list-style: none;
+  margin: auto;
+  display: none;
+  position: relative;
+  background-color: #fff;
+  width: 360px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 11;
+}
+
+.hamburger__menu.active {
+  display: block;
+  top: 0;
+}
+
+.icon_close {
+  margin: 20px 20px 20px 320px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hamburger__menu_nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 71px;
+  height: auto;
+  gap: 30px;
+  font-family: Cormorant;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.06px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  margin: auto;
+}
+
+.hamburger__menu_nav a {
+  text-align: center;
+  width: 71px;
+}
+
+.hamburger__menu_line {
+  background: #f7f2ea;
+  width: 300px;
+  height: 2px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.hamburger__menu_textfooter {
+  width: 127px;
+  height: 124px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.hamburger__menu_textfooter a {
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 17.7px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 100%;
+}
+
+.hamburger__menu_platefooter {
+  width: 100%;
+  height: 60px;
+  background-color: #f7f2ea;
+  left: 0;
+  bottom: 0;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger__menu_footer {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.overlay.active {
+  display: block;
+}
+
 menu {
   max-width: 1160px;
   display: flex;
@@ -124,15 +254,6 @@ h2 {
   justify-content: space-between;
   gap: 40px;
   padding-top: 40px;
-}
-
-@media (max-width: 1180px) {
-  .cards {
-    display: contents;
-  }
-  .card {
-    padding: 40px 40px 0 0;
-  }
 }
 
 .bg_earth {
@@ -392,7 +513,7 @@ address {
   font-size: 14px;
   color: #282828;
   justify-self: end;
-  margin: 10px;
+  padding: 0 20px 20px;
 }
 
 footer {
@@ -406,4 +527,95 @@ footer {
   background-position: 0 70%, 0 100%;
   background-size: 100% 50%, cover;
   background-repeat: no-repeat;
+}
+
+.advantage_mobile {
+  display: none;
+}
+
+@media (max-width: 1180px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Адаптация под формат 768px */
+
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    text-align: start;
+  }
+
+  .long_line_green {
+    margin: 0 29px;
+  }
+
+  .text_header {
+    margin-left: 40%;
+    margin-top: 120px;
+    padding-bottom: 200px;
+  }
+
+  .head {
+    background-position: top;
+    background-size: 150%;
+  }
+
+  .advantage {
+    display: none;
+  }
+
+  .advatage_1 {
+    display: block;
+  }
+
+  .advantage_mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .advantage_mobile_img {
+    margin: auto;
+  }
+
+  .advantage_mobile_info {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 40px 20px 0 20px;
+  }
+
+  .advantage_mobile_info img {
+    margin-top: 10px;
+  }
+
+  #one {
+    margin-bottom: 175px;
+  }
+
+  #two {
+    margin-bottom: 120px;
+  }
+
+  .contact div {
+    justify-self: left;
+    padding-left: 30px;
+  }
+
+  menu {
+    align-items: start;
+    padding: 40px;
+  }
+
+  .menu_footer {
+    flex-direction: column;
+  }
 }

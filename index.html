@@ -8,9 +8,37 @@
   </head>
   <body>
     <header>
+      <div
+        style="
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          position: absolute;
+        "
+      >
+        <div class="hamburger__menu">
+          <img class="icon_close" src="./Images/close_icon.svg" alt="" />
+          <div class="hamburger__menu_nav">
+            <a href="#site">Сайт</a>
+            <a href="#socnet">Социальный сети</a>
+            <a href="#advantages">Преимущества</a>
+            <a href="#contact">Контакты</a>
+          </div>
+          <div class="hamburger__menu_line"></div>
+          <div class="hamburger__menu_platefooter"></div>
+        </div>
+        <div class="overlay"></div>
+      </div>
       <div class="head">
         <menu>
           <img class="great_logo" src="images/logo_MIR24.svg" alt="mir24" />
+          <div class="hamburger">
+            <div class="hamburger__icons">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
           <div class="menu">
             <a href="#site">Сайт</a>
             <a href="#socnet">Социальный сети</a>
@@ -88,7 +116,7 @@
           <div class="advertising">
             <div>
               <div class="ad_mir24">
-                <img src="images/world_cyan.svg" alt="" />
+                <img id="site" src="images/world_cyan.svg" alt="" />
                 <a
                   href="http://mir24.tv"
                   target="_blank"
@@ -140,7 +168,7 @@
             </div>
             <div>
               <div class="ad_socmedia">
-                <img src="images/SocMedia_znak.svg" alt="" />
+                <img id="socnet" src="images/SocMedia_znak.svg" alt="" />
                 <img src="images/socmedia_but.svg" alt="" />
               </div>
             </div>
@@ -223,7 +251,7 @@
       <div class="bg_earth_down">
         <section class="advantage">
           <div class="advatage_1">
-            <h2>Наши преимущества</h2>
+            <h2 id="advantages">Наши преимущества</h2>
 
             <img src="images/02_img.png" alt="" />
 
@@ -232,6 +260,7 @@
               <p class="note">Более 100 публикаций в день</p>
             </div>
           </div>
+
           <img class="advatage_2" src="images/line_desktop.svg" alt="" />
           <div class="advatage_3">
             <img src="images/01_img.png" alt="" />
@@ -252,9 +281,40 @@
             </div>
           </div>
         </section>
+        <div class="advantage_mobile">
+          <h2 id="advantages">Наши преимущества</h2>
+          <div class="advantage_mobile_img">
+            <img src="images/01_img.png" alt="" />
+          </div>
+
+          <div class="advantage_mobile_info">
+            <img src="images/line_desktop.svg" alt="" />
+
+            <div>
+              <div id="one">
+                <p class="number_time">Аудитория</p>
+                <p class="note">
+                  Активная и заинтересованная, с равномерным возрастным
+                  распределением
+                </p>
+              </div>
+              <div id="two">
+                <p class="number_time">Эксклюзивный контент</p>
+                <p class="note">Более 100 публикаций в день</p>
+              </div>
+              <div id="three">
+                <p class="number_time">Большой охват</p>
+                <p class="note">
+                  В социальных сетях, мессендежар и видеохостингах
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="bg_down">
           <section class="contact">
-            <h2>Контакты</h2>
+            <h2 id="contact">Контакты</h2>
             <div>
               <h2 class="bold">Марина Теран</h2>
               <h2 class="bold">
@@ -290,5 +350,6 @@
         </div>
       </div>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
