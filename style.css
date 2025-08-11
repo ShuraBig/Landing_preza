@@ -510,7 +510,8 @@ address {
 }
 
 .copy {
-  font-size: 14px;
+  font-size: 10px;
+  font-weight: 300;
   color: #282828;
   justify-self: end;
   padding: 0 20px 20px;
@@ -530,6 +531,10 @@ footer {
 }
 
 .advantage_mobile {
+  display: none;
+}
+
+.two_column_mob {
   display: none;
 }
 
@@ -617,5 +622,282 @@ footer {
 
   .menu_footer {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 360px) {
+  .great_logo {
+   max-height: 39px;
+  }
+
+  h1 {
+    font-size: 22px;
+    width: 110px;
+  }
+
+  .line {
+    width: 110px;
+    height: 2px;
+  }
+
+  .date {
+    width: 110px;
+    font-size: 12px;
+  }
+
+  .text_header {
+margin-left: 50%;
+margin-top: 10px;
+padding-bottom: 75px;
+  }
+
+  .green_line {
+    width: 100%;
+    margin: 11px auto;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .about img {
+    width: 100%;
+  }
+
+  section {
+    padding: 15px 0 0;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+    padding-left: 10px;
+    margin: 0 0 15px;
+  }
+
+  #media p {
+    padding-left: 10px;
+  }
+
+  .card {
+    width: 310px;
+    height: auto;
+  }
+
+  .bg_earth {
+    background-size: 170%;
+  }
+
+  #site {
+    width: 39px;
+  }
+
+.ad_mir24 {
+  width: 184px;
+  margin-bottom: 0px;
+}
+
+  .ad_mir24 img {
+    width: 128px;
+  }
+
+  #advertising {
+    padding: 35px 0px 0;
+  }
+
+  #advertising h2 {
+    margin-bottom: 15px;
+  }
+
+  .long_line_green {
+    margin: 0px 10px 0;
+  }
+
+  .advertising {
+    padding: 20px;
+  
+  }
+
+.table {
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.number {
+  font-size: 42px;
+}
+
+.one_column div {
+margin-top: 20px;
+}
+
+.two_column {
+  display: none;
+}
+
+.two_column_mob {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-items: left;
+}
+
+.two_column_mob img {
+  margin-left: 0px;
+  max-width: 320px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.number_time {
+  font-size: 42px;
+  line-height: 50px;
+}
+
+.statistic {
+  margin: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.statistic div {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.statistic img {
+  height: 170px;
+}
+
+.long_line_green_in {
+  margin: 15px 0px;
+}
+
+#socnet {
+  width: 39px;
+}
+.ad_socmedia {
+  width: 226px;
+  margin-bottom: 0px;
+}
+
+  .ad_socmedia img {
+    width: 175px;
+  }
+
+  .table_sub {
+    margin-top: 10px;
+  }
+
+  .name_socmrdia {
+    width: 167px;
+    gap: 9px;
+  }
+
+  .table_sub h3 {
+    margin: 0;
+  }
+
+  .table_sub p {
+    font-size: 16px;
+  }
+
+  .table_sub img {
+    width: 27px;
+    height: auto;
+  }
+
+  .strok_gradient {
+    height: 35px;
+    margin: 0;
+    width: 280px;
+  }
+
+   .strok {
+    height: 35px;
+    margin: 0;
+    width: 280px;
+  }
+
+  .sub_number {
+    width: 107px;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .sub_two_column {
+    margin: 0;
+  }
+
+  .sub_two_column img {
+    width: 320px;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .footnote {
+    font-size: 10px;
+    margin: 10px 0;
+  }
+
+  .advantage_mobile_info .number_time {
+    font-size: 32px;
+    line-height: 40px;
+    width: 270px;
+  }
+
+  .advantage_mobile_info img {
+    width: auto;
+    height: 404px;
+    margin-right: 10px;
+  }
+
+  .advantage_moble_text {
+    width: 275px;
+  }
+
+  #one {
+    margin-bottom: 90px;
+  }
+
+  #two {
+    margin-bottom: 80px;
+  }
+
+  .contact div {
+    padding: 0 10px;
+  }
+
+  .contact h2 {
+    margin: 10px 0;
+  }
+
+  .address {
+    font-size: 14px;
+  }
+
+  .long_black_line {
+    margin-top: 40px;
+  }
+
+  .menu_footer {
+    display: none;
+  }
+
+  footer img {
+    width: 65px;
+    height: auto;
+  }
+
+ footer menu {
+    padding: 20px 10px 0;
   }
 }
