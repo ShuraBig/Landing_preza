@@ -626,9 +626,17 @@ footer {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 430px) {
   .great_logo {
    max-height: 39px;
+  }
+
+  menu {
+    padding: 25px;
+  }
+
+  .head {
+    background-size: 100%;
   }
 
   h1 {
@@ -647,7 +655,7 @@ footer {
   }
 
   .text_header {
-margin-left: 50%;
+margin-left: 45%;
 margin-top: 10px;
 padding-bottom: 75px;
   }
@@ -716,7 +724,6 @@ padding-bottom: 75px;
 
   .advertising {
     padding: 20px;
-  
   }
 
 .table {
@@ -771,11 +778,12 @@ justify-content: center;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
 }
 
 .statistic img {
   height: 170px;
+  margin: 0 70px 0 0;
 }
 
 .long_line_green_in {
