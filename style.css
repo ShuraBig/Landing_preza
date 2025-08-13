@@ -909,4 +909,9 @@ justify-content: center;
  footer menu {
     padding: 20px 10px 0;
   }
+
+  .bold {
+    font-size: 26px;
+    font-weight: 600;
+  }
 }
